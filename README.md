@@ -1,6 +1,10 @@
 # pi_weather_display
 playing with weather APIs, units and rasp pi tft/oled displays
 
+for testing:
+curl https://api.weather.gov/stations/KCNK/observations/latest > /home/pi/weath_api/latest.json
+hypercorn testing_app:app --bind 0.0.0.0:8000
+
 ## ToDo:
 - convert current conditions to class
 - fix "null" API returns
