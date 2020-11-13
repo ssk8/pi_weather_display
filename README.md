@@ -2,7 +2,11 @@
 playing with weather APIs, units and rasp pi tft/oled displays
 
 for testing:
-curl https://api.weather.gov/stations/KCNK/observations/latest > /home/pi/weath_api/latest.json
+curl https://api.weather.gov/stations/KCNK/observations/latest > /home/pi/pi_weather_display/latest.json
+
+python -m http.server 8000
+
+for fastapi:
 
 hypercorn testing_app:app --bind 0.0.0.0:8000
 
